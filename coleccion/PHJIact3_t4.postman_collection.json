@@ -1,0 +1,164 @@
+{
+  "info": {
+    "_postman_id": "6e7f6b80-c324-407b-a77e-55434181429e",
+    "name": "PHJIact3_t4",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58882402",
+    "_collection_link": "https://go.postman.co/collection/58882402-6e7f6b80-c324-407b-a77e-55434181429e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "http://157.180.30.55:8085/api/pacientes/2",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"nombre\": \"Juan Pérez G.\", \"edad\": 31, \"dentista\": { \"id\": 2 } }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://157.180.30.55:8085/api/pacientes/2",
+          "protocol": "http",
+          "host": [
+            "157",
+            "180",
+            "30",
+            "55"
+          ],
+          "port": "8085",
+          "path": [
+            "api",
+            "pacientes",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://157.180.30.55:8085/api/pacientes/2",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://157.180.30.55:8085/api/pacientes/2",
+          "protocol": "http",
+          "host": [
+            "157",
+            "180",
+            "30",
+            "55"
+          ],
+          "port": "8085",
+          "path": [
+            "api",
+            "pacientes",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://157.180.30.55:8085/api/pacientes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://157.180.30.55:8085/api/pacientes",
+          "protocol": "http",
+          "host": [
+            "157",
+            "180",
+            "30",
+            "55"
+          ],
+          "port": "8085",
+          "path": [
+            "api",
+            "pacientes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://157.180.30.55:8085/api/dentistas",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"nombre\": \"Dra. Ana López\", \"especialidad\": \"Ortodoncia\" }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://157.180.30.55:8085/api/dentistas",
+          "protocol": "http",
+          "host": [
+            "157",
+            "180",
+            "30",
+            "55"
+          ],
+          "port": "8085",
+          "path": [
+            "api",
+            "dentistas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://157.180.30.55:8085/api/pacientes",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"nombre\": \"Juan Pérez\", \"edad\": 30, \"dentista\": { \"id\": 1 } }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://157.180.30.55:8085/api/pacientes",
+          "protocol": "http",
+          "host": [
+            "157",
+            "180",
+            "30",
+            "55"
+          ],
+          "port": "8085",
+          "path": [
+            "api",
+            "pacientes"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

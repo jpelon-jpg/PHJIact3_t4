@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Detalle</title></head>
+<body>
+    <div th:if="${empleado != null}">
+        <h1 th:text="${empleado.nombre}"></h1>
+        <p>Puesto: <span th:text="${empleado.puesto}"></span></p>
+        <p>Salario: <span th:text="${empleado.salario}"></span></p>
+    </div>
+    <p th:if="${empleado == null}">No existe ese empleado.</p>
+    <a th:href="@{/clinica/empleados}">Volver</a>
+</body>
+</html>

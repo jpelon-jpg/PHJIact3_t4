@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Empleados</title></head>
+<body>
+    <h1 th:text="${nombreProyecto}">Proyecto</h1>
+    <p>Autor: <span th:text="${autor}"></span></p>
+
+    <form th:action="@{/clinica/empleados}" method="get">
+        Filtrar por puesto: <input type="text" name="puesto" th:value="${filtro}">
+        <button type="submit">Filtrar</button>
+    </form>
+
+    <table border="1">
+        <tr><th>ID</th><th>Nombre</th><th>Puesto</th><th>Salario</th></tr>
+        <tr th:each="e : ${empleados}">
+            <td th:text="${e.id}"></td>
+            <td><a th:href="@{/clinica/empleados/{id}(id=${e.id})}" th:text="${e.nombre}"></a></td>
+            <td th:text="${e.puesto}"></td>
+            <td th:text="${e.salario}"></td>
+        </tr>
+    </table>
+    <p><a th:href="@{/clinica/nuevo}">Agregar empleado</a></p>
+</body>
+</html>

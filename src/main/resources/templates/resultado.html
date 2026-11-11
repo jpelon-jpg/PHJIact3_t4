@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Resultado</title></head>
+<body>
+    <h1>Empleado recibido</h1>
+    <p>ID: <span th:text="${empleado.id}"></span></p>
+    <p>Nombre: <span th:text="${empleado.nombre}"></span></p>
+    <p>Puesto: <span th:text="${empleado.puesto}"></span></p>
+    <p>Salario: <span th:text="${empleado.salario}"></span></p>
+    <a th:href="@{/clinica/empleados}">Volver a la lista</a>
+</body>
+</html>
